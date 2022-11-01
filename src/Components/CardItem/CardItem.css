@@ -1,0 +1,55 @@
+.properties{
+    padding: 5% 15%;
+    background: #f8f7fd;
+}
+
+.property-container{
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.card{
+    background: #fff;
+    width: 320px;
+    box-shadow: #eee 2px 2px;
+    border-radius: 5px;
+}
+
+.card-content{
+    padding: 15px;
+}
+
+.card-img img{
+    border-radius: 5px 5px 0 0;
+    width: 320px;
+
+}
+
+.price-container{
+    color: #4784c4;
+    font-weight: 700;
+}
+
+.property-name{
+    font-size: 1.3rem;
+}
+
+.property-address{
+    font-weight: 300;
+    color: #55657c;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.properties-icon-section{
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+i{
+    color: #4784c4;
+    margin: 0 3px;
+}

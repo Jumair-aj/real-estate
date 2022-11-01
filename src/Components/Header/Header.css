@@ -6,12 +6,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 70px;
+    height: 90px;
 
 }
 
 .img-logo{
-    width:130px;
+    width:180px;
     height: auto;
 }
 
