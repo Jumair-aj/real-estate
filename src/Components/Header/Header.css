@@ -1,0 +1,38 @@
+.header-container{
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+
+}
+
+.img-logo{
+    width:130px;
+    height: auto;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-item{
+    margin:0 20px ;
+    color: #a9a9a9;
+}
+
+.header-btn{
+    background: #4784c4;
+    outline:none;
+    border: none;
+    padding:1%;
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    color: #fff;
+}
