@@ -1,0 +1,24 @@
+.footer{
+    width: 100%;
+}
+
+.footer-container{
+    padding: 30px 100px;
+    display: grid;
+    grid-template-columns: 25% 30% 20% 25%;
+}
+
+.quick-links ul{
+    list-style: none;
+    margin-top: 20px;
+    text-align: start;
+}
+
+.quick-links{
+    border-left: #e1e1e1 1px solid;
+}
+
+.footer-div{
+    text-align: center;
+    padding: 0 50px;
+}

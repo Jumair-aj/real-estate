@@ -1,12 +1,20 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { PropContext } from '../../Store/Context'
+import { properties } from '../Properties/Properties'
 import './CardItem.css'
 
 function CardItem() {
-    const [propertyItems, setPropertyItems] = useState([{name:'Great Home',url:'https://images.adsttc.com/media/images/5ecd/d4ac/b357/65c6/7300/009d/large_jpg/02C.jpg?1590547607',price:'300',address:'212 Fifth Avenue, New York City',bed:'4'},{name:'Beverly SpringField',url:'https://images.adsttc.com/media/images/5ecd/d4ac/b357/65c6/7300/009d/large_jpg/02C.jpg?1590547607',price:'300',address:'New York City 212 Fifth Avenue'},{name:'Great Home',url:'https://images.adsttc.com/media/images/5ecd/d4ac/b357/65c6/7300/009d/large_jpg/02C.jpg?1590547607',price:'300',address:'New York City 212 Fifth Avenue'}])
+    const searchTerm = useContext(PropContext) 
+    const [propertyItems, setPropertyItems] = useState([])
+    useEffect(() => {
+      setPropertyItems(properties)
+console.log(searchTerm);
+    }, [])
+    
   return (
   <section className="properties"> 
   <div className="property-container">
-{propertyItems.map((propertyItem) =>{
+{propertyItems.filter(propertyItem=>propertyItem.status===searchTerm? propertyItem : '').map((propertyItem) =>{
     return(
     <div className="card">
         <div className="card-container">
@@ -28,15 +36,15 @@ function CardItem() {
                     <div className="properties-icon-section">
                         <div className="properties-bed">
                     <i className="fa-solid fa-bed"></i>
-                    <span>{propertyItem.bed} bed</span>
+                    <span>{propertyItem.bed} beds</span>
                     </div>
                         <div className="properties-bed">
                     <i className="fa-solid fa-sink"></i>
-                    <span>{propertyItem.bed} Bathroom</span>
+                    <span>{propertyItem.bed} Bathrooms</span>
                     </div>
                         <div className="properties-bed">
                     <i className="fa-solid fa-bed"></i>
-                    <span>{propertyItem.bed} bed</span>
+                    <span>{propertyItem.bed} m<sup style={{fontSize:'8px'}}>2</sup></span>
                     </div>
                     </div>
                 </div>

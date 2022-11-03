@@ -67,6 +67,9 @@
     font-size: large;
 }
 
+.search-input:focus{
+    outline: none;
+}
 .search-input::placeholder{
     color: #000;
 }
@@ -97,5 +100,5 @@
     height: 50px;
     border-radius: 3px;
     color: #fff;
-    background: #4784c4;
+    background: #5237ed;
 }

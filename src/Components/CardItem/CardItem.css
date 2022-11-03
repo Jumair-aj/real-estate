@@ -1,10 +1,11 @@
 .properties{
-    padding: 5% 15%;
-    background: #f8f7fd;
+    padding: 0 20px;
 }
 
 .property-container{
-
+    background: #f6f8fa;
+    padding: 5% 80px;
+    border-radius: 50px;
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
@@ -13,12 +14,17 @@
 .card{
     background: #fff;
     width: 320px;
-    box-shadow: #eee 2px 2px;
+    box-shadow: #dfdcdc 2px 2px 4px 6px;
     border-radius: 5px;
 }
 
+.card:hover{
+    box-shadow:  #cfcfcf 2px 2px 5px 8px;
+    transition: 0.3s all ease-in-out;
+}
+
 .card-content{
-    padding: 15px;
+    padding: 10px 15px;
 }
 
 .card-img img{
@@ -28,12 +34,14 @@
 }
 
 .price-container{
-    color: #4784c4;
-    font-weight: 700;
+    color: #5237ed;
+    font-weight: 900;
+    font-size: 1rem;
 }
 
 .property-name{
     font-size: 1.3rem;
+    line-height: 1;
 }
 
 .property-address{
@@ -44,12 +52,14 @@
 }
 
 .properties-icon-section{
-    margin: 5px 0;
+    margin-top: 4px ;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    color: #73808d;
+    font-size: 0.9rem;
 }
 
 i{
-    color: #4784c4;
+    color: #5237ed;
     margin: 0 3px;
 }
